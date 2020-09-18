@@ -15,7 +15,7 @@ public class Operating {
     private static final Pattern PATTERN_GRANT_ADMIN = Pattern.compile("grant\\sadmin\\sto\\s([^;\\s]+)\\s?;");
     private static final Pattern PATTERN_REVOKE_ADMIN = Pattern.compile("revoke\\sadmin\\sfrom\\s([^;\\s]+)\\s?;");
 
-//    create table if not exists `runoob_tbl`(`runoob_title` varchar(100) not null);
+//    create table runoob_tbl (`runoob_title` varchar(100) not null);
     public void dbms() {
         //User user = new User("user1", "abc");
         User user = User.getUser("user1", "abc");
@@ -81,6 +81,7 @@ public class Operating {
                 }
             }
 
+            // create table aaa (name222 varchar);
             while (matcherAlterTable_add.find()) {
                 if (user.getLevel() != User.ADMIN) {
                     System.out.println("用户" + user.getName() + "权限不够，无法完成此操作！");

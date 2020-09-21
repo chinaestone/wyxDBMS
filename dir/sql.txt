@@ -27,18 +27,3 @@ select * from table3,employee;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
